@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        .box {
+            font-size: 75px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            display: none;
+        }
+        
+        @media only screen and (min-width:360px) and (max-width: 640) {
+            #box-1 {
+                display: block;
+                background-color: brown;
+            }
+        }
+        
+        @media only screen and (min-width:360px) and (max-width: 640px) {
+            #box-2 {
+                display: block;
+                background-color: rgb(255, 145, 0);
+            }
+        }
+        
+        @media only screen and (min-width:411px) and (max-width: 731px) {
+            #box-3 {
+                display: block;
+                background-color: rgb(0, 181, 236);
+            }
+        }
+        
+        @media only screen and (min-width:411px) and (max-width: 823px) {
+            #box-4 {
+                display: block;
+                background-color: rgb(229, 255, 0);
+            }
+        }
+        /*         
+        @media only screen and (min-width:1024px) and (max-width:1366 px) {
+            #box-5 {
+                display: block;
+                background-color: rgb(0, 132, 255);
+            }
+        } */
+        
+        @media only screen and (min-width:1366px) {
+            #box-6 {
+                display: block;
+                background-color: rgb(171, 255, 16);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box-1">moto g4</div>
+    <div class="box" id="box-2">galaxy s5</div>
+    <div class="box" id="box-3">pixel 2</div>
+    <div class="box" id="box-4">pixel 2XL</div>
+    <!-- <div class="box" id="box-5">i pad pro</div> -->
+    <div class="box" id="box-6">computer screen</div>
+
+</body>
+
+</html>

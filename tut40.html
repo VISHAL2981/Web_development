@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRODUCTION AND CREATING A BASIC GRID</title>
+    <style>
+        .conatiner {
+            display: grid;
+            /* grid-template-columns: 300px auto 100px; */
+            /* grid-template-columns: 300px 100px auto; */
+            grid-template-columns: repeat(5, auto);
+        }
+        
+        .items {
+            background-color: chartreuse;
+            border: 2px solid blueviolet;
+            /* padding: 6px 2px; */
+            margin: 3px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="conatiner">
+
+        <div class="items">this is item-1</div>
+        <div class="items">this is item-2</div>
+        <div class="items">this is item-3</div>
+        <div class="items">this is item-4</div>
+        <div class="items">this is item-5</div>
+        <div class="items">this is item-6</div>
+        <div class="items">this is item-7</div>
+        <div class="items">this is item-8</div>
+        <div class="items">this is item-9</div>
+        <div class="items">this is item-9</div>
+        <div class="items">this is item-9</div>
+        <div class="items">this is item-9</div>
+        <div class="items">this is item-9</div>
+        <div class="items">this is item-9</div>
+        <div class="items">this is item-9</div>
+    </div>
+
+</body>
+
+</html>

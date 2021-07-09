@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling links and buttons</title>
+    <style> 
+
+    .container {
+
+          border: 4px solid rebeccapurple;
+          background-color:rgb(255, 231, 164);  
+          margin:25px auto;
+          padding:25px;
+          width :55%;
+
+    } 
+    .btn{
+        /* margin: 10px; */
+        padding: 10px;
+        /* to make cursor on buttons */
+        cursor: pointer;
+        /* we can change font size too */
+        font-size: 12px;
+        border-radius: 6px;
+         border: none;
+    }
+
+    /* to remove underline from hyper link  */
+    
+    a{
+
+        text-decoration: none;
+    }
+    /* to change link text colour */
+    a:hover{
+
+        color:red;
+        background-color:blueviolet;
+    }
+    .btn:hover{
+        color:red;
+        background-color:blueviolet;
+
+    }
+    a:visited{
+
+        color:mediumvioletred;
+        background-color:crimson;
+
+    }
+    a:active{
+            background-color:darkblue;
+        }
+    
+    </style>
+
+
+</head>
+<body>
+
+    <div class="container" id="cont1">
+<h1> this is my heading </h1>
+<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cum exercitationem perferendis quasi nulla tenetur magnam eligendi, illo asperiores, quidem soluta hic, ipsa quas! Id in obcaecati minus illo tenetur, laborum asperiores velit? Corrupti?</p>
+ <a href="www.google.com" class="btn">read more</a>
+ <button class="btn">contact us</button>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow function in js</title>
+</head>
+
+<body>
+    <div class="container">
+        this is arrow function tutorial
+    </div>
+    <script>
+        // arrow function
+
+        // function greet() {
+        //     console.log('good morning');
+        // }
+
+
+
+        // shortcut by arrow function
+        // let greet = () => {
+        //     console.log('Good morning');
+        // }
+
+        //  shortcut{in this we can remove brackets too}
+        let greet = () => console.log('good morning');
+        greet();
+
+        // let sum = (a, b) => {
+        //         return a + b;
+        //     }
+        // shortcut
+        let sum = (a, b) => a + b;
+        let half = a => a / 2;
+
+
+        setTimeout(() => {
+            console.log('we are inside setTime out');
+
+        }, 2000);
+
+
+        let obj1 = {
+            greeting: "good morning",
+
+            names: ["vishal", "monu", "nitin", "ramgopal"],
+            speak() {
+                this.names.forEach((student) => {
+                    console.log(this.greeting + "  today you looking beautiful    " + student);
+                });
+            }
+        }
+        obj1.speak();
+    </script>
+</body>
+
+</html>

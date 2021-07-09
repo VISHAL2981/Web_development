@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Using plain html in Pug</title> -->
+    <title>#{title}</title>
+
+    style
+        include ../static/style.css
+
+</head>
+<body>
+    <nav>
+        <ul>
+        <li><a href= '/'>HOME</a></li>
+        <li><a href= '/'>ABOUT</a></li>
+        <li><a href= '/'>SERVICES</a></li>
+        <li><a href= '/'>CONTACT US</a></li>
+        </ul>
+    </nav>
+   
+    <div class="container">
+
+        <h2>Play pubg tournament just for 60$ - Fill this form now!</h2>
+         <!-- <p> 
+            | #{content} 
+            |  This is a plain html using pug  
+        </p> -->
+        <form action="/"  method="post" id="contact">
+            <input type="text" name="name" id="name" placeholder="enter your name">
+            <input type="text" name="age" id="age" placeholder="enter your age">
+            <input type="text" name="gender" id="gender" placeholder="enter your gender">
+            <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your address"></textarea>
+            <textarea name="more" id="more" cols="30" rows="10" placeholder=" More About your daily rouitine "></textarea>
+        
+            <button class="btn">SUBMIT</button>
+        
+        
+        
+        </form>
+
+       
+    </div>
+</body>
+</html>

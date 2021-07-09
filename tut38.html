@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform property</title>
+    <style>
+        .box {
+            background-color: rgb(140, 228, 40);
+            border: 2px solid black;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            width: 200px;
+            transition: all 1s ease-in-out;
+        }
+        
+        .container {
+            height: 90vh;
+            background-color: crimson;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .box:hover {
+            /* transform: rotate(45deg); */
+            /* transform: skew(45deg); */
+            /* transform: scale(2); */
+            font-size: 26px;
+            font-style: italic;
+            transform: translate(123px, 123px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">this is vishal box</div>
+    </div>
+
+</body>
+
+</html>

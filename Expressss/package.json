@@ -1,0 +1,11 @@
+{
+  "name": "app.js",
+  "version": "1.0.0",
+  "description": "world best package",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vishal bhai",
+  "license": "ISC"
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selectors</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        
+        section {
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid tomato; */
+            height: 344px;
+            margin: 3px 23px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+        
+        .navigation {
+            display: flex;
+            font-size: 15px;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 3rem;
+        }
+        
+        header::before {
+            background: url("https://source.unsplash.com/collection/190727/1600x900") no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.4;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+
+        <h1>This is World of Dreams</h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit iusto maxime dolorum assumenda quis illo at, ratione quasi, reprehenderit similique doloremque minus consequuntur a aliquam facilis porro ab sit quae libero officiis
+            perspiciatis! Cumque.</p>
+    </section>
+    <hr>
+
+</body>
+
+</html>

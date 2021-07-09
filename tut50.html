@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string functions in js</title>
+</head>
+
+<body>
+    <script>
+        var str = "This is a string";
+        console.log(str);
+
+        // First occurence of a substring
+        var position = str.indexOf('is');
+        console.log(position)
+
+        // Last occurence of a substring
+        position = str.lastIndexOf('is');
+        console.log(position)
+
+        // Substring from a string
+        // var substr = str.slice(1,7);
+        // var substr = str.substring(1,7);
+        var substr1 = str.substr(1, 3);
+        console.log(substr1)
+
+        // string kai  word replace krne hai tho 
+        // var replaced = str.replace('string', 'Harry');
+        // console.log(str)
+        // console.log(replaced)
+
+        // lower case and upper case 
+
+        // console.log(str.toUpperCase());
+        // console.log(str.toLowerCase());
+
+
+        // we can use concat method to add strings we can use + method too there we add a word to str
+        // var newString = str.concat('New String')
+        // console.log(newString)
+
+        // we can remove white spaces or trim them
+        // var strWithWhitespaces = "         this contains        whitespaces         ";
+        // console.log(strWithWhitespaces)
+        // console.log(strWithWhitespaces.trim())
+
+        // ek string mai sai character ko kaise extract krte we can read char code too
+        // var char2 = str.charAt(2);
+        // var char2 = str.charCodeAt(2); // Not very important
+        // console.log(char2)
+
+        // slicing of string
+
+        console.log(str[3]);
+    </script>
+
+</body>
+
+</html>

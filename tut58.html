@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set interval AND set timeout</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- this is our container -->
+        time now is<span id="time"></span>
+    </div>
+
+    <script>
+        console.log('this is tutorial 58');
+        // setTimeout --> Alllows us to run the function once after the interval of time
+        // clearTimeout --> Alllows us to run the function repeatedly after the interval of time
+
+
+        function greet(name, byetext) {
+            console.log("good morning mr/miss  " + name + " " + byetext)
+        }
+
+        // timeout = setTimeout(greet, 4000, "vishal", "take care");
+        // console.log(timeout);
+        // clearTimeout(timeout);
+        // setTimeout(greet(), 12000); --> Wrong as it is calling the function inside setTimeout {parenthesis nhiu lgana hota isliye glt hai}
+        // intervalId = setInterval(greet, 1000, "vishal", "Good Night");
+        // clearInterval(intervalId);
+
+
+        function displayTime() {
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displayTime, 1000);
+    </script>
+
+</body>
+
+</html>
